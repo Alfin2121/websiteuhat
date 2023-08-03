@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #ff5a0b;
+    padding: 20px 30px;
+    gap: 10rem;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 4.5rem;
+}
+
+header nav ul li :hover {
+    background-color: #806f66;
+    border: 2px solid #806f66;
+    border-radius: 5px 5px;
+    padding: 20px 20px;
+}
+
+header nav ul li {
+    list-style: none;
+    line-height: 50px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #383636;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+content {
+    display: flex;
+    width: 75%;
+    gap: 1.5rem;
+}
+
+content .deskripsi {
+    padding: 20px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: #fff2bc;
+    padding: 20px 20px;
+    width: 50%;
+}
+
+content .cara {
+    background-color: #fff2bc;
+    padding: 20px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+aside {
+    background-color: #806f66;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px 20px;
+    text-align: center;
+    flex: 1;
+}
+
+content .deskripsi section {
+    text-align: justify;
+
+}
+
+content .deskripsi section h1 {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+content .deskripsi section ul {
+    text-align: justify;
+    list-style: decimal;
+    padding: 5px 40px;
+}
+
+content .cara section ul {
+    text-align: justify;
+    list-style: decimal;
+    padding: 5px 40px;
+}
+
+
+.aside-wrapper ul li {
+    list-style: none;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #ff5a0b;
+    margin-top: 20px;
+    padding: 20px 50px;
+}
+
+.footer-wrapp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-wrapp ul li {
+    list-style: none;
+    line-height: 40px;
+    padding: 0px 40px;
+}
+
+.footer-wrapp ul li a {
+    text-decoration: none;
+    color: #383636;
+}
+
+.footer-wrapp ul li a:hover {
+    background-color: rgb(141, 141, 223);
+    border: 5px solid rgb(141, 141, 223);
+}
+
+.step {
+    width: 15rem;
+}
+
+.profile-gambar {
+    width: 100px;
+    height: 150px;
+}
+
+@media screen and (max-width:1200px) {
+    main {
+        flex-flow: column nowrap;
+
+    }
+
+    content .deskripsi {
+        width: 100%;
+    }
+
+    content {
+        flex-flow: column nowrap;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width:780px) {
+
+    header {
+        flex-flow: column;
+
+    }
+
+    header nav ul {
+        display: flex;
+        padding: 0 10px;
+        margin-bottom: 10px;
+        gap: 1.5rem;
+    }
+
+    footer {
+        padding: 10px 5px;
+    }
+}
